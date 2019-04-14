@@ -1,24 +1,111 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <base target="_top">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col s12 m6  4">
+          <label for="datePickerid">Date</label>
+          <input type="text" id="datePickerId" class="datepicker">
+          
+        </div>
+        <div class="col s12 m6 4 ">
+          <div class="input-field col s12">
+            <select id="groupId">
+              <option value="" disabled selected>Choose your group</option>
+              <option value="1">In</option>
+              <option value="2">Out</option>
+              <option value="3">Trans</option>
+            </select>
+            <label>Groupe</label>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col s12 m6 4 ">
+          <div class="input-field col s12">
+            <select id="categoryId">
+              <option value="" disabled selected>Choose your category</option>
+              <option value="1">In</option>
+              <option value="2">Out</option>
+              <option value="3">Trans</option>
+            </select>
+            <label>Category</label>
+          </div>
+        </div>
+        <div class="col s12 m6 4 ">
+          <div class="input-field col s12">
+            <select id="subCategoryId">
+              <option value="" disabled selected>Choose your sub-category</option>
+              <option value="1">In</option>
+              <option value="2">Out</option>
+              <option value="3">Trans</option>
+            </select>
+            <label>Sub-category</label>
+          </div>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col s12 m8 6 ">
+          <div class="input-field col s12">
+            <select id="counterPartyId">
+              <option value="" disabled selected>Choose your counter party</option>
+              <option value="1">In</option>
+              <option value="2">Out</option>
+              <option value="3">Trans</option>
+            </select>
+            <label>Counter party</label>
+          </div>
+        </div> 
+        
+      </div>      
+      <div class="row">
+        <div class="col s6 m4 4 ">
+          <div class="input-field col s6">
+            <input id="amountId"  type="text" class="validate">
+            <label for="amountId">Amount</label>
+          </div>
+        </div> 
+        <div class="col s6 m2 2 ">
+          <div class="input-field col s6">
+            <select id="currencyId">
+              <option value="EUR" selected>€</option>
+              <option value="GBP">£</option>
+              <option value="USD">$</option>
+            </select>
+            <label>Currency</label>
+          </div>
+        </div> 
+        
+      </div>       
+      <div class="row">
+        <div class="col s12 ">
+          <div class="input-field ">
+            <input id="commentsId" type="text" class="validate">
+            <label for="commentsId">Commments</label>
+          </div>
+        </div> 
+      </div> 
     
-  
-  
-  
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    </div>
+    <script  src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.datepicker').datepicker();
+        $('select').formSelect();
+      });
+      
+    
+    </script>
   </body>
 </html>
 
 
+
     
-    
-    
+     
